@@ -1,0 +1,35 @@
+<div>
+  <div class="card text-white bg-success mb-3" style="max-width: 30rem; margin: 0 auto;">
+    <div class="card-header">add item</div>
+    <div class="card-body">
+      <h4 class="card-title">type the data</h4>
+      <form class="">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="name"
+            class="form-control mb-2"
+            name="name"
+            [(ngModel)]="nameInput">
+          <input
+            type="text"
+            placeholder="age"
+            name="age"
+            class="form-control mb-2"
+            [(ngModel)]="ageInput">
+          <input
+            type="text"
+            placeholder="email"
+            name="email"
+            class="form-control mb-2"
+            [(ngModel)]="emailInput">
+          <button
+            class="btn btn-primary"
+            type="button"
+            (click)="addCard()"
+           >Add</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

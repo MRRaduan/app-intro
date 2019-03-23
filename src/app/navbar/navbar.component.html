@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+  <a routerLink="/" class="navbar-brand">AppIntro</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}"
+      class="nav-item">
+        <a routerLink="/" class="nav-link">Home</a>
+      </li>
+      <li routerLinkActive="active" class="nav-item">
+        <a routerLink="/add" class="nav-link">Add</a>
+      </li>
+    </ul>
+  </div>
+</nav>

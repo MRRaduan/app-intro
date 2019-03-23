@@ -1,0 +1,13 @@
+<div class="container">
+ <form action="" class="form mb-3">
+      <input type="text" placeholder="Search by name" name="searchname" class="form-control" [(ngModel)]="searchTerm">
+    </form>
+  <div class="row">
+    <app-card
+      class="col-sm-12 card mb-3"
+      *ngFor="let card of cards | cardsFilter:searchTerm"
+      [carditem]="card"
+      (cardDeletedEvent)="receiveDeleteCard(card)"
+      ></app-card>
+  </div>
+</div>
