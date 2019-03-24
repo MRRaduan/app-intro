@@ -8,7 +8,7 @@ export class CardlistService {
   private cardlist: Card[] = [
     new Card(1, 'Matheusao', '21', 'matheusao@audaz.com.br'),
     new Card(2, 'Marcelinho', '21', 'marcelinho@audaz.com.br'),
-    new Card(3, 'Brunão', '21', 'brunao@audaz.com.br'),
+    new Card(3, 'Brunão', '31', 'brunao@audaz.com.br'),
   ];
 
   getCards() {
