@@ -8,13 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CardlistComponent } from './cardlist/cardlist.component';
 import { CardComponent } from './cardlist/card/card.component';
 import { AddformComponent } from './addform/addform.component';
-import { Routes, RouterModule } from '@angular/router';
 import { CardsFilter } from './cardlist/cards-filter.pipe';
-
-const appRoutes: Routes = [
-  {path: '', component: CardlistComponent},
-  {path: 'add', component: AddformComponent},
-];
 
 @NgModule({
   declarations: [
@@ -29,7 +23,7 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [
   ],
