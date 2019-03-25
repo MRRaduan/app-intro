@@ -9,6 +9,8 @@ export class CardlistService {
     new Card(1, 'Matheusao', '21', 'matheusao@audaz.com.br'),
     new Card(2, 'Marcelinho', '21', 'marcelinho@audaz.com.br'),
     new Card(3, 'Brunão', '31', 'brunao@audaz.com.br'),
+    new Card(3, 'Rafa', '23', 'rafa@audaz.com.br'),
+    new Card(3, 'Helena', '21', 'helena@audaz.com.br'),
   ];
 
   getCards() {
@@ -33,11 +35,5 @@ export class CardlistService {
         resolve(this.cardlist.push(newCard));
       }
     )
-  }
-
-  findCard(value) {
-    // this.cardlist.map(x => {
-    //   return x.filter(y=>y.toLowerCase().indexOf(value.toLowerCase())>-1);
-    // });
   }
 }
